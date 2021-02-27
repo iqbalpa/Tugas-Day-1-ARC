@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    font-size: small;
+}
+
+nav > * {
+    margin: 5px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav img {
+    height: 5vh;
+    width: 5vh;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+form {
+    width: 47.5vw;
+}
+
+.main-logo {
+    width: 100%;
+    padding: 0 20% 5vh;
+}
+
+.search-input input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 50px;
+    border: 1px solid #dfe1e5;
+    font-size: 16px;
+}
+
+.search-input input:focus, 
+.search-input input:hover {
+    outline: none;
+    box-shadow: 1px solid rgba(0, 0, 0, 0);
+}
+
+.search-input {
+    position: relative;
+}
+
+.icon {
+    position: absolute; 
+    top: 25%;
+    opacity: 0.35;
+}
+
+.mic-icon {
+    right: 20px;
+}
+
+.search-icon {
+    left: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    color: #3c4043;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border: none;
+    margin: 5vh 1vh 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.buttons button:hover {
+    border: 1px solid #ddd;
+    cursor: pointer;
+    box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0);
+}
+
+form p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.footer {
+    place-items: left;
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    width: 1355px;
+}
+
+.left-footer {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+}
+.left-footer a {
+    color: rgba(0,0,0,.54);
+    font-size: 14px;
+}
+
+.right-footer {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 225px;
+}
+.right-footer p {
+    color: rgba(0,0,0,.54);
+    font-size: 14px;
+}
+.right-footer a {
+    color: rgba(0,0,0,.54);
+    font-size: 14px;
+}
